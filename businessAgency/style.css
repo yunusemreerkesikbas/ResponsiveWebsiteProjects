@@ -7,12 +7,14 @@
     list-style-type: none;
     font-family: "Baloo Da 2", cursive;
 }
-html{
+
+html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 /* navbar */
-.navbar{
+.navbar {
     width: 100%;
     height: 8rem;
     background-color: rgba(0, 0, 0, 0.9);
@@ -23,20 +25,24 @@ html{
     transition: height .5s;
     animation: animateNavbar 1s .5s forwards;
 }
+
 @keyframes animateNavbar {
-    0%{
+    0% {
         top: -8rem;
 
     }
-    100%{
-        top:0;
+
+    100% {
+        top: 0;
     }
 }
-.navbar.change{
+
+.navbar.change {
     height: 100vh;
-    
+
 }
-.logo{
+
+.logo {
     position: absolute;
     top: 1.5rem;
     left: 4rem;
@@ -44,19 +50,21 @@ html{
 }
 
 
-.logo a{
+.logo a {
     font-family: "MADE Soulmaze", sans-serif;
     font-size: 2.5rem;
     color: #eee;
     letter-spacing: .1rem;
 }
-.logo span{
+
+.logo span {
     font-family: "MADE Soulmaze", sans-serif;
     font-size: 3.5rem;
     font-weight: bold;
     color: #9e0e09;
 }
-.nav-list{
+
+.nav-list {
     position: absolute;
     top: 25%;
     left: 50%;
@@ -66,14 +74,16 @@ html{
     align-items: center;
     opacity: 0;
     visibility: hidden;
-    transition: all .7s ;
+    transition: all .7s;
 }
-.change .nav-list{
+
+.change .nav-list {
     opacity: 1;
     visibility: visible;
     transition: all .7s .5s;
 }
-.nav-link{
+
+.nav-link {
     font-family: "MADE Soulmaze", sans-serif;
     font-size: 4rem;
     letter-spacing: .3rem;
@@ -82,10 +92,12 @@ html{
     transition: color .4s;
 
 }
-.nav-link:hover{
+
+.nav-link:hover {
     color: #9e0e09;
 }
-.menu{
+
+.menu {
     width: 4rem;
     height: 4rem;
     /* background-color: #eee; */
@@ -99,44 +111,52 @@ html{
     cursor: pointer;
 
 }
-.line{
+
+.line {
     width: 100%;
     height: .2rem;
     background-color: #eee;
     transition: transform .3s;
 }
-.line-1{
+
+.line-1 {
     width: 50%;
-    
+
 }
-.change .line-1{
-    transform: translate(100%,1rem) rotate(-35deg);
+
+.change .line-1 {
+    transform: translate(100%, 1rem) rotate(-35deg);
     transform-origin: right;
 }
-.line-2{
+
+.line-2 {
     width: 100%;
 }
-.line-3{
+
+.line-3 {
     width: 50%;
     margin-left: auto;
-    
+
 }
-.change .line-3{
+
+.change .line-3 {
     transform: translateY(-1rem) rotate(35deg);
     transform-origin: right;
 }
+
 /* navbar */
 
 /* Section - 1  */
 
-.section-1{
+.section-1 {
     width: 100%;
     height: 100vh;
     background: url(images/dark-bg.jpeg) no-repeat;
     background-size: cover;
     position: relative;
 }
-.banner{
+
+.banner {
     width: 100%;
     position: absolute;
     top: 20%;
@@ -145,20 +165,22 @@ html{
     text-align: center;
 
 }
-.banner-heading{
+
+.banner-heading {
     margin-bottom: 4rem;
     height: 20rem;
     perspective: 50rem;
     overflow: hidden;
 
 }
+
 .banner-heading span {
     font-family: "Oswald", sans-serif;
     font-size: 12rem;
     font-weight: 400;
     text-transform: uppercase;
     color: #fff;
-    text-shadow: .3rem .3rem .6rem rgba(0,0,0, .5);
+    text-shadow: .3rem .3rem .6rem rgba(0, 0, 0, .5);
     position: absolute;
     width: 100%;
     display: flex;
@@ -167,62 +189,72 @@ html{
     opacity: 0;
     letter-spacing: 3rem;
 }
-.heading-1{
-    animation: animateHeading 12s 3s ,infinite;
+
+.heading-1 {
+    animation: animateHeading 12s 3s, infinite;
 }
-.heading-2{
-    animation: animateHeading 12s 6s ,infinite;
+
+.heading-2 {
+    animation: animateHeading 12s 6s, infinite;
 }
-.heading-3{
-    animation: animateHeading 12s 9s ,infinite;
+
+.heading-3 {
+    animation: animateHeading 12s 9s, infinite;
 }
-.heading-4{
-    animation: animateHeading 12s 12s ,infinite;
+
+.heading-4 {
+    animation: animateHeading 12s 12s, infinite;
 }
-@keyframes animateHeading{
-    0%{
+
+@keyframes animateHeading {
+    0% {
         transform: translateZ(8rem);
         opacity: 0;
         letter-spacing: 3rem;
     }
-    3%{
+
+    3% {
         transform: translateZ(0);
         opacity: 1;
         letter-spacing: 1.5rem;
     }
-    25%{
+
+    25% {
         transform: translateZ(0);
         opacity: 1;
         letter-spacing: 1.5rem;
     }
-    28%{
+
+    28% {
         transform: translateZ(8rem);
         opacity: 0;
         letter-spacing: 3rem;
     }
-    100%{
+
+    100% {
         transform: translateZ(8rem);
         opacity: 0;
         letter-spacing: 3rem;
     }
 
 }
-.banner-paragraph{
+
+.banner-paragraph {
     font-size: 4rem;
     font-weight: 400;
     text-transform: uppercase;
     color: #fff;
-    background-color: rgba(0,0,0, .6);
+    background-color: rgba(0, 0, 0, .6);
     width: 30%;
     margin: 0 auto 4rem auto;
-    padding: 1rem 0 ;
-    box-shadow: 1rem 1rem 5rem rgba(0,0,0, .5);
+    padding: 1rem 0;
+    box-shadow: 1rem 1rem 5rem rgba(0, 0, 0, .5);
     opacity: 0;
     visibility: hidden;
     animation: fadeAnimation 1s 1.5s forwards;
 }
 
-.banner-btn{
+.banner-btn {
     width: 30rem;
     height: 6rem;
     background: linear-gradient(to right, #9b0e0e, #7a1010);
@@ -239,7 +271,8 @@ html{
     position: relative;
     overflow: hidden;
 }
-.banner-btn::before{
+
+.banner-btn::before {
     content: "";
     width: 100%;
     height: 100%;
@@ -250,17 +283,143 @@ html{
     transform: skewX(-30deg);
     transition: left .5s;
 }
-.banner-btn:hover::before{
+
+.banner-btn:hover::before {
     left: 100%;
 }
-@keyframes fadeAnimation{
-    0%{
+
+@keyframes fadeAnimation {
+    0% {
         opacity: 0;
         visibility: hidden;
 
     }
-    100%{
+
+    100% {
         opacity: 1;
         visibility: visible;
     }
 }
+
+/* section-2 */
+.section-2 {
+    width: 100%;
+    height: 100vh;
+    background-color: #222020;
+    display: flex;
+    align-items: center;
+    padding: 0 10rem;
+    position: relative;
+}
+
+.section-heading {
+    font-size: 10rem;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    color: #ddd;
+    margin-right: 4rem;
+}
+
+.section-heading-line {
+    width: 15rem;
+    height: 0.2rem;
+    background-color: #ddd;
+}
+
+.video-wrapper {
+    width: 69rem;
+    height: 38rem;
+    position: absolute;
+    top: 5rem;
+    right: 15rem;
+    box-shadow: 3rem 3rem 6rem rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+}
+
+.video-wrapper:hover .controls {
+    transform: translateY(0);
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+    transition: opacity 0.3s;
+}
+
+.controls {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: translateY(calc(100% - 0.4rem));
+    transition: transform 0.4s;
+}
+
+.video-bar-wrapper {
+    width: 100%;
+    height: 0.7rem;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.video-bar {
+    height: 100%;
+    width: 0;
+    background-color: #d30819;
+    transition: width 0.2s linear;
+}
+
+.buttons {
+    padding: 2rem 1rem 1rem 1rem;
+}
+
+.buttons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.buttons i {
+    width: 3rem;
+    height: 3rem;
+    font-size: 2.8rem;
+    color: #fff;
+}
+
+.section-2-paragraph {
+    width: 69rem;
+    position: absolute;
+    bottom: 2rem;
+    right: 15rem;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #ddd;
+    border-top: 0.2rem double #aaa;
+    border-bottom: 0.3rem double #aaa;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    text-shadow: 1rem 1rem 2rem rgb(0 0 0 / 70%);
+}
+
+.fa-quote-left {
+    align-self: flex-start;
+    font-size: 5rem;
+    color: #bbb;
+    margin-bottom: 2rem;
+}
+
+.fa-quote-right {
+    align-self: flex-end;
+    font-size: 5rem;
+    color: #bbb;
+}
+
+/* section-2 */
